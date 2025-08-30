@@ -36,7 +36,22 @@ nav a:hover {
     color:white;
 }
 
+main {
+    padding-left: 9px;
+}
+
 #dest {
     margin-top: 30px;
     font-size: 35px;
+}
+
+#lahaine {
+    border-radius: 15px;
+}
+
+footer {
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 20px;
 }
