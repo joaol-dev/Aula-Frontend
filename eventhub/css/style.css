@@ -1,88 +1,55 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    color: #333;
 }
+h1 { color: #007acc; }
 
-header {
-    background-color:lightgrey; 
-    border-radius: 0px 0px 10px 10px;
+.evento-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-#event {
-    margin-left: 10px;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 20px;
+    gap: 10px;
 }
-
-nav {
-    margin-right: 15px;
-}
-
-nav a {
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    margin-left: auto;
-    margin-left: 25px;
-    padding: 7px 11px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    background-color: #333;
-    color:white;
-}
-
-main {
-    padding-left: 9px;
-}
-
-.item {
+.evento {
+    flex: 1;
+    background: #eef6fb;
     padding: 15px;
     border-radius: 6px;
-    flex: 1;
+    text-align: center;
 }
-
-.item h2 {
-    margin-top: 0;
-}
-
-button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px 15px;
+.evento button {
+    padding: 8px 12px;
     border-radius: 4px;
+    border: none;
+    color: white;
     cursor: pointer;
 }
+.inscrito { background: #d9534f; }
+.nao-inscrito { background: #007acc; }
+.contador { font-weight: bold; color: #007acc; }
 
-button:hover {
-    background: grey
-;
+/* Estilo do nav do EventHub */
+header nav {
+    margin-top: 10px;
+    background: #007acc;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-
-footer {
-    border-radius: 15px 15px 0 0;
-    text-align: center;
-    background-color: lightgrey;
-    margin-top: 25px;
-    padding: 20px;
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
 }
-
-
-@media (max-width: 600px) {
-    body {
-        padding: 10px;   /* reduz padding para telas pequenas */
-    }
-    h1 {
-        font-size: 24px; /* diminui tamanho da fonte */
-    }
+header nav a:hover {
+    background: #005a99;
+    color: #fff;
 }
